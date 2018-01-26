@@ -49,6 +49,12 @@ footer .ielogo {
   display: block;
   margin: 0 auto 10px;
 }
+footer ul {
+  text-align: center;
+}
+footer ul .dot {
+  color: #fff;
+}
 
 .container .scroll-anchor.about {
   display: block;
