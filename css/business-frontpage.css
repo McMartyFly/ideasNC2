@@ -70,6 +70,69 @@ footer .ielogo {
   height: 100%;
 }
 
+/* LANDINGPAGE BUTTON MODULE */
+.container.lp-buttons .row .caption {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+.container.lp-buttons .row ul {
+  background: #F7F7F7;
+  border: 1px solid #DFDFDF;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 0 15px;
+  padding: 0 0 25px;
+  text-align: center;
+  width: 100%;
+}
+.container.lp-buttons .row ul li {
+  float: left;
+  margin-top: 20px;
+  width: 50%;
+}
+.container.lp-buttons .row ul li a {
+  background: #fff;
+  cursor: pointer;
+  padding: 20px 0;
+  width: 200px;
+}
+.container.lp-buttons .row ul li a.coaching {
+  color: #fff;
+  background: #008000;
+  box-shadow: 0px 2px 0px 2px #004d00;
+}
+.container.lp-buttons .row ul li a.coaching:hover {
+  background: #009900;
+}
+
+.container.lp-buttons .row ul li a.web-design {
+  color: #fff;
+  background: #ff0000;
+  box-shadow: 0px 2px 0px 2px #cc0000;
+}
+.container.lp-buttons .row ul li a.web-design:hover {
+  background: #ff4d4d;
+}
+
+.container.lp-buttons .row ul li a.digital-marketing {
+  color: #fff;
+  background: #ff9900;
+  box-shadow: 0px 2px 0px 2px #cc7a00;
+}
+.container.lp-buttons .row ul li a.digital-marketing:hover {
+  background: #ffad33;
+}
+
+.container.lp-buttons .row ul li a.public-speaking {
+  color: #fff;
+  background: #6600ff;
+  box-shadow: 0px 2px 0px 2px #5200cc;
+}
+.container.lp-buttons .row ul li a.public-speaking:hover {
+  background: #8533ff;
+}
+
 /*social icon styles*/
 .social-wrap {
   margin-top: 25px;
@@ -161,6 +224,17 @@ footer .ielogo {
 
 .card-body h4 {
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .container.lp-buttons .row ul li {
+    float: none;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .container.lp-buttons .row ul li a {
+    width: 90%;
+  }
 }
 
 @media (min-width: 992px) {

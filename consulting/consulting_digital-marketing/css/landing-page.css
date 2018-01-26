@@ -1,0 +1,203 @@
+/*!
+ * Start Bootstrap - Landing Page v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/digital_marketing_lp_v3.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+  header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  header.masthead h1 {
+    text-shadow: -1px 0 #1a1a1a, 0 1px #1a1a1a, 1px 0 #1a1a1a, 0 -1px #1a1a1a;
+    font-size: 2rem;
+  }
+  header.masthead h1 span {
+    color: #ff9900;
+  }
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 4rem;
+      padding-bottom: 4rem; }
+      header.masthead h1 {
+        font-size: 3rem; } }
+
+.showcase .showcase-text {
+  padding: 3rem; }
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover; }
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem; } }
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
+  .features-icons .features-icons-item {
+    max-width: 20rem; }
+    .features-icons .features-icons-item .features-icons-icon {
+      height: 7rem; }
+      .features-icons .features-icons-item .features-icons-icon i {
+        font-size: 4.5rem; }
+    .features-icons .features-icons-item:hover .features-icons-icon i {
+      font-size: 5rem; }
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
+  .testimonials .testimonial-item {
+    max-width: 18rem; }
+    .testimonials .testimonial-item img {
+      max-width: 12rem;
+      box-shadow: 0px 5px 5px 0px #adb5bd; }
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/digital_marketing_lp_v3.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  text-shadow: -1px 0 #1a1a1a, 0 1px #1a1a1a, 1px 0 #1a1a1a, 0 -1px #1a1a1a;
+}
+  .call-to-action .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+
+.mini-banner-top {
+  background: green;
+  margin: 0;
+  text-align: center;
+}
+
+footer.footer.redesign {
+  background: #f8f9fa;
+  padding: 20px 0 25px;
+}
+footer.redesign .container .fathom {
+  color: #AF2317;
+}
+footer.redesign .container .team-carter {
+  color: #0dbae8;
+}
+footer.redesign a.logo {
+  display: block;
+  text-align: center;
+}
+footer.redesign a.logo img {
+  display: inline-block;
+}
+
+footer.redesign ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+footer.redesign ul li {
+  font-size: 34px;
+  display: inline;
+}
+.footer.redesign ul.social-icons {
+  margin-bottom: 6px;
+}
+footer.redesign ul.mb-2 li {
+  font-size: 16px;
+}
+
+footer.redesign ul li a.fa-facebook-square {
+  color: #3B5998;
+}
+footer.redesign ul li a.fa-facebook-square:hover {
+  color: #5a7abf;
+}
+
+footer.redesign ul li a.fa-twitter-square {
+  color: #1DA1F2;
+}
+footer.redesign ul li a.fa-twitter-square:hover {
+  color: #56b8f5;
+}
+
+footer.redesign ul li a.fa-google-plus-square {
+  color: #DB4437;
+}
+footer.redesign ul li a.fa-google-plus-square:hover {
+  color: #e37268;
+}
+
+footer.redesign ul li a.fa-youtube-square {
+  color: #ff0000;
+}
+footer.redesign ul li a.fa-youtube-square:hover {
+  color: #ff4d4d;
+}
+
+footer.redesign ul li a.fa-instagram {
+  color: #C32AA3;
+}
+footer.redesign ul li a.fa-instagram:hover {
+  color: #db57bf;
+}
+
+footer.redesign ul li a.fa-linkedin-square {
+  color: #007BB5;
+}
+footer.redesign ul li a.fa-linkedin-square:hover {
+  color: #00aeff;
+}
+
+footer.redesign ul li a {
+  display: inline-block;
+}
+footer.redesign ul li a:hover {
+  text-decoration: none;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.branded {
+  color: #c53241;
+  font-weight: 700;
+}
