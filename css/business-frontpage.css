@@ -76,6 +76,91 @@ footer ul .dot {
   height: 100%;
 }
 
+
+/*social icon styles*/
+.social-wrap {
+  margin-top: 25px;
+}
+.social-wrap ul {
+  list-style: none;
+  padding: 0;
+}
+.social-wrap ul li {
+  float: left;
+  margin-right: 5px;
+}
+.social-wrap ul li a {
+  font-size: 34px;
+}
+.social-wrap ul li a:hover {
+  text-decoration: none;
+}
+.social-wrap ul .ziglar-icon {
+
+}
+.social-wrap ul li.ziglar-icon a {
+  display: block;
+  height: 30px;
+  opacity: 1.0;
+  position: relative;
+  top: 1px;
+}
+.social-wrap ul li.ziglar-icon a:hover {
+  opacity: 0.7;
+}
+.social-wrap ul li.ziglar-icon a img {
+  border-radius: 7px;
+  height: 30px;
+  position: relative;
+  top: -13px;
+  width: 30px;
+}
+
+/*social icon colors*/
+.social-wrap ul .fa-facebook-square {
+  color: #3B5998;
+}
+.social-wrap ul .fa-facebook-square:hover {
+  color: #5a7abf;
+}
+
+
+.social-wrap ul .fa-twitter-square {
+  color: #1DA1F2;
+}
+.social-wrap ul .fa-twitter-square:hover {
+  color: #56b8f5;
+}
+
+.social-wrap ul .fa-google-plus-square {
+  color: #DB4437;
+}
+.social-wrap ul .fa-google-plus-square:hover {
+  color: #e37268;
+}
+
+.social-wrap ul .fa-youtube-square {
+  color: #ff0000;
+}
+.social-wrap ul .fa-youtube-square:hover {
+  color: #ff4d4d;
+}
+
+.social-wrap ul .fa-instagram {
+  color: #C32AA3;
+}
+.social-wrap ul .fa-instagram:hover {
+  color: #db57bf;
+}
+
+.social-wrap ul .fa-linkedin-square {
+  color: #007BB5;
+}
+.social-wrap ul .fa-linkedin-square:hover {
+  color: #00aeff;
+}
+
+
 /* LANDINGPAGE BUTTON MODULE */
 .container.lp-buttons .row .caption {
   font-size: 24px;
@@ -139,86 +224,6 @@ footer ul .dot {
   background: #8533ff;
 }
 
-/*social icon styles*/
-.social-wrap {
-  margin-top: 25px;
-}
-.social-wrap ul {
-  list-style: none;
-  padding: 0;
-}
-.social-wrap ul li {
-  float: left;
-  margin-right: 5px;
-}
-.social-wrap ul li a {
-  font-size: 34px;
-}
-.social-wrap ul li a:hover {
-  text-decoration: none;
-}
-.social-wrap ul .ziglar-icon {
-
-}
-.social-wrap ul li.ziglar-icon a {
-  display: block;
-  opacity: 1.0;
-  position: relative;
-  top: 1px;
-}
-.social-wrap ul li.ziglar-icon a:hover {
-  opacity: 0.7;
-}
-.social-wrap ul li.ziglar-icon a img {
-  height: 30px;
-  position: absolute;
-  width: 30px;
-}
-
-/*social icon colors*/
-.social-wrap ul .fa-facebook-square {
-  color: #3B5998;
-}
-.social-wrap ul .fa-facebook-square:hover {
-  color: #5a7abf;
-}
-
-
-.social-wrap ul .fa-twitter-square {
-  color: #1DA1F2;
-}
-.social-wrap ul .fa-twitter-square:hover {
-  color: #56b8f5;
-}
-
-.social-wrap ul .fa-google-plus-square {
-  color: #DB4437;
-}
-.social-wrap ul .fa-google-plus-square:hover {
-  color: #e37268;
-}
-
-.social-wrap ul .fa-youtube-square {
-  color: #ff0000;
-}
-.social-wrap ul .fa-youtube-square:hover {
-  color: #ff4d4d;
-}
-
-.social-wrap ul .fa-instagram {
-  color: #C32AA3;
-}
-.social-wrap ul .fa-instagram:hover {
-  color: #db57bf;
-}
-
-.social-wrap ul .fa-linkedin-square {
-  color: #007BB5;
-}
-.social-wrap ul .fa-linkedin-square:hover {
-  color: #00aeff;
-}
-
 .branded {
   color: #c53241;
   font-weight: 700;
@@ -231,6 +236,59 @@ footer ul .dot {
 .card-body h4 {
   font-size: 1.3rem;
 }
+
+/* MODAL STYLES */
+/* Outer */
+.popup {
+width:100%;
+height:100%;
+display:none;
+position:fixed;
+top:0px;
+left:0px;
+background:rgba(0,0,0,0.75);
+}
+/* Inner */
+.popup-inner {
+max-width:700px;
+width:90%;
+padding:40px;
+position:absolute;
+top:50%;
+left:50%;
+-webkit-transform:translate(-50%, -50%);
+transform:translate(-50%, -50%);
+box-shadow:0px 2px 6px rgba(0,0,0,1);
+border-radius:3px;
+background:#fff;
+}
+/* Close Button */
+.popup-close {
+width:30px;
+height:30px;
+padding-top:4px;
+display:inline-block;
+position:absolute;
+top:0px;
+right:0px;
+transition:ease 0.25s all;
+-webkit-transform:translate(50%, -50%);
+transform:translate(50%, -50%);
+border-radius:1000px;
+background:rgba(0,0,0,0.8);
+font-family:Arial, Sans-Serif;
+font-size:20px;
+text-align:center;
+line-height:100%;
+color:#fff;
+}
+.popup-close:hover {
+-webkit-transform:translate(50%, -50%) rotate(180deg);
+transform:translate(50%, -50%) rotate(180deg);
+background:rgba(0,0,0,1);
+text-decoration:none;
+}
+
 
 @media screen and (max-width: 767px) {
   .container.lp-buttons .row ul li {

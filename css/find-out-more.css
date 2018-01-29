@@ -1,0 +1,41 @@
+body {
+  background: #343a40;
+  margin: 0;
+}
+.container.header {
+  margin: 8px auto;
+}
+.container.header .ielogo {
+  position: relative;
+  top: -3px;
+}
+.container.header .navbar-brand {
+  color: #fff;
+}
+.container.header .navbar-brand .branded {
+  color: #c53241;
+}
+
+.content-wrap {
+  background: #fff;
+  padding: 20px;
+}
+.content-wrap h1 {
+  color: #0069d9;
+  font-weight: bold;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+}
+
+footer .ielogo {
+  display: block;
+  margin: 0 auto 10px;
+}
+footer ul {
+  text-align: center;
+}
+footer ul .dot {
+  color: #fff;
+}
