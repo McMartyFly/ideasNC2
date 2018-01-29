@@ -224,6 +224,46 @@ footer ul .dot {
   background: #8533ff;
 }
 
+/* social covers cta */
+.container.social-covers {
+  margin-top: 25px;
+}
+.container.social-covers .row {
+  background: #F7F7F7;
+  border: 1px solid #DFDFDF;
+  border-radius: 4px;
+  margin: 0;
+  padding: 10px 0 15px;
+}
+.container.social-covers p {
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+}
+.container.social-covers p span {
+  color: #c53241;
+  font-weight: bold;
+}
+
+.container.social-covers a {
+  background: #007bff;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 10px 14px;
+  text-decoration: none;
+}
+.container.social-covers a:hover {
+  background: #0069d9;
+}
+
+/* CHAMBER OF COMMERCE BADGE */
+#mni-membership-636528281782536900 .mn-widget-member-name,
+#mni-membership-636528281782536900 .mn-widget-member-text {
+  display: none;
+}
+
 .branded {
   color: #c53241;
   font-weight: 700;
@@ -236,59 +276,6 @@ footer ul .dot {
 .card-body h4 {
   font-size: 1.3rem;
 }
-
-/* MODAL STYLES */
-/* Outer */
-.popup {
-width:100%;
-height:100%;
-display:none;
-position:fixed;
-top:0px;
-left:0px;
-background:rgba(0,0,0,0.75);
-}
-/* Inner */
-.popup-inner {
-max-width:700px;
-width:90%;
-padding:40px;
-position:absolute;
-top:50%;
-left:50%;
--webkit-transform:translate(-50%, -50%);
-transform:translate(-50%, -50%);
-box-shadow:0px 2px 6px rgba(0,0,0,1);
-border-radius:3px;
-background:#fff;
-}
-/* Close Button */
-.popup-close {
-width:30px;
-height:30px;
-padding-top:4px;
-display:inline-block;
-position:absolute;
-top:0px;
-right:0px;
-transition:ease 0.25s all;
--webkit-transform:translate(50%, -50%);
-transform:translate(50%, -50%);
-border-radius:1000px;
-background:rgba(0,0,0,0.8);
-font-family:Arial, Sans-Serif;
-font-size:20px;
-text-align:center;
-line-height:100%;
-color:#fff;
-}
-.popup-close:hover {
--webkit-transform:translate(50%, -50%) rotate(180deg);
-transform:translate(50%, -50%) rotate(180deg);
-background:rgba(0,0,0,1);
-text-decoration:none;
-}
-
 
 @media screen and (max-width: 767px) {
   .container.lp-buttons .row ul li {
