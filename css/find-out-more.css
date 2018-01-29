@@ -18,13 +18,50 @@ body {
 
 .content-wrap {
   background: #fff;
-  padding: 20px;
+  padding: 20px 10%;
 }
 .content-wrap h1 {
   color: #0069d9;
   font-weight: bold;
   text-align: center;
 }
+
+form .input-wrap {
+  background: #0069d9;
+  border-radius: 30px;
+  margin: 15px auto 0;
+  padding: 20px;
+  width: 50%;
+}
+form .input-wrap div:nth-child(4) {
+  text-align: center;
+}
+form .input-wrap p {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+  text-align: center;
+}
+form .input-wrap label {
+  display: none;
+}
+form .input-wrap input {
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  margin: 10px 0;
+  padding: 0 5px;
+  width: 100%;
+}
+form .input-wrap input[type=submit] {
+  background: #00e6b8;
+  box-shadow: 0px 2px 3px #006652;
+  color: #343a40;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 50%;
+}
+
 button {
   cursor: pointer;
 }
@@ -38,4 +75,10 @@ footer ul {
 }
 footer ul .dot {
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  form .input-wrap {
+    width: 100%;
+  }
 }
