@@ -76,6 +76,9 @@ footer ul {
 footer ul .dot {
   color: #fff;
 }
+footer .branded {
+  color: #c53241;
+}
 
 @media screen and (max-width: 767px) {
   form .input-wrap {
