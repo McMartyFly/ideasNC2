@@ -44,6 +44,12 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #0069d9;
 }
+.navbar-dark .navbar-nav .nav-item.red-link a span {
+  color: #c53241;
+}
+.navbar-dark .navbar-nav .nav-item.red-link:hover a span {
+  color: #d65c68;
+}
 
 footer .ielogo {
   display: block;
@@ -70,6 +76,19 @@ footer ul .dot {
 }
 .container address .lower-address {
   padding-left: 26px;
+}
+.container .head-title {
+  text-align: center;
+}
+
+.container .row.ideas-envy .card-body {
+  padding: 15px 5px;
+}
+.container .row.ideas-envy .card-title {
+  margin: 0;
+}
+.container .row.ideas-envy h4 {
+  text-align: center;
 }
 
 .card {
@@ -166,6 +185,10 @@ footer ul .dot {
   font-size: 24px;
   text-align: center;
   width: 100%;
+}
+.container.lp-buttons .row .caption span span {
+  color: #c53241;
+  font-weight: bold;
 }
 .container.lp-buttons .row ul {
   background: #F7F7F7;

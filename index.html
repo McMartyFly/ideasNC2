@@ -53,6 +53,10 @@
          scrollToAnchor('services');
        });
 
+       var activeNavItem;
+       activeNavItem = $("#navbarResponsive").find('.active');
+       console.log(activeNavItem);
+
     });
     </script>
   </head>
@@ -63,11 +67,11 @@
       <div class="container"><img class="ielogo" src="favicomatic/favicon-32x32.png" alt="Ideas Envy Logo" /> <a class="navbar-brand" href="#"><span class="branded">Ideas Envy</span> LLC</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> </button>
         <div id="navbarResponsive" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span> </a></li>
-            <li class="nav-item"><a class="nav-link services" href="#services">Programs Offered</a></li>
-            <li class="nav-item"><a class="nav-link about" href="#about">Contact Ideas Envy</a></li>
-            <li class="nav-item"><a class="nav-link blog" href="http://ideasenvy.com/ideas_galore">Ideas Galore</a></li>
-          </ul>
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link services" href="programs-offered/index.html">Programs Offered</a></li>
+            <li class="nav-item red-link"><a class="nav-link about" href="#about"><span>Contact Ideas Envy</span></a></li>
+            <li class="nav-item red-link"><a class="nav-link blog" href="http://ideasenvy.com/ideas_galore"><span>Ideas Galore</span></a></li>
+
         </div>
       </div>
     </nav>
@@ -123,43 +127,12 @@
           </div>
         </div>
       </div>
-      <!-- /.row -->
-      <a name="services"></a>
-      <div class="row">
-        <div class="col-sm-4 my-4">
-          <div class="card"><img class="card-img-top" src="imgs/BBYFramed.jpg" alt="" />
-            <div class="card-body">
-              <h4 class="card-title">Building the Best You</h4>
-              <p class="card-text">Your future is NOT determined by other people. It's time to take charge of your life by climbing the stairway to success and developing and action plan to take your life where you want to go.</p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary" href="find-out-more/building-the-best-you.html" target="_blank">Find Out More!</a></div>
-          </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card"><img class="card-img-top" src="imgs/BWRFramed.jpg" alt="" />
-            <div class="card-body">
-              <h4 class="card-title">Building Winning Relationships</h4>
-              <p class="card-text">The key to achieving a successful life is building healthy relationships in your family and at work. Strengthen your network of contacts and see opportunities open up that you never thought possible.</p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary" href="find-out-more/building-winning-relationships.html" target="_blank">Find Out More!</a></div>
-          </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card"><img class="card-img-top" src="imgs/GOALSFramed.jpg" alt="" />
-            <div class="card-body">
-              <h4 class="card-title">Goal Setting and Achievement</h4>
-              <p class="card-text">Unless you have clearly defined goals, you are not going to realize the maximum potential that lies within you. Learn the power of goal setting and how to achieve any goal you set using a proven formula.</p>
-            </div>
-            <div class="card-footer"><a class="btn btn-primary" href="find-out-more/goal-setting-and-achievement.html" target="_blank">Find Out More!</a></div>
-          </div>
-        </div>
-      </div>
-    <!-- /.row -->
+
     </div>
     <!-- /.container -->
+    
     <div class="container lp-buttons">
       <div class="row">
-        <!-- <div class="caption">We Help Transform Your Life</div> -->
         <ul>
           <li>
             <a href="consulting/consulting_coaching/index.html" target="_blank" class="btn coaching">Coaching</a>
@@ -168,7 +141,7 @@
             <a href="consulting/consulting_public-speaking/index.html" target="_blank" class="btn public-speaking">Public Speaking</a>
           </li>
           <li class="caption">
-            <span>Tell Us How<br>We Can Help Transform Your life</span>
+            <span>Tell Us How<br><span>We Can Help Transform Your life</span></span>
           </li>
           <li>
             <a href="consulting/consulting_web-design/index.html" target="_blank" class="btn web-design">Web Design</a>
@@ -214,7 +187,8 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- google tag manager --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTJ7T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- Drip -->
+    <!-- google tag manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTJ7T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- Drip -->
     <script type="text/javascript">// <![CDATA[
     var _dcq = _dcq || [];
       var _dcs = _dcs || {};

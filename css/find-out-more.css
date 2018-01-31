@@ -35,6 +35,19 @@ body {
   display: block;
 }
 
+.content-wrap .demo-covers-wrap {
+  margin: 25px 0;
+}
+
+.content-wrap .demo-covers-wrap img {
+  float: none;
+  width: 49%;
+}
+
+form {
+  clear: both;
+}
+
 form .input-wrap {
   background: #0069d9;
   border-radius: 30px;
@@ -95,6 +108,14 @@ footer .branded {
     width: 100%;
   }
   form .input-wrap {
+    width: 100%;
+  }
+  .content-wrap .demo-covers-wrap {
+    margin: 0;
+  }
+  .content-wrap .demo-covers-wrap img {
+    float: none;
+    margin-bottom: 20px;
     width: 100%;
   }
 }
