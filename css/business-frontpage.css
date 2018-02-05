@@ -281,6 +281,11 @@ footer ul .dot {
   background: #0069d9;
 }
 
+/* LA BANNER */
+.LA-BannerWidget > div {
+  margin: 25px auto 0;
+}
+
 /* CHAMBER OF COMMERCE BADGE */
 #mni-membership-636528281782536900 .mn-widget-member-name,
 #mni-membership-636528281782536900 .mn-widget-member-text {
@@ -308,6 +313,10 @@ footer ul .dot {
   }
   .container.lp-buttons .row ul li a {
     width: 90%;
+  }
+  .LA-BannerWidget .banner728-90 {
+    height: auto !important;
+    width: 100% !important;
   }
 }
 
