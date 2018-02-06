@@ -55,6 +55,9 @@ footer .ielogo {
   display: block;
   margin: 0 auto 10px;
 }
+footer p.url {
+  margin-top: 7px !important;
+}
 footer ul {
   text-align: center;
 }
@@ -291,6 +294,8 @@ footer ul .dot {
 #mni-membership-636528281782536900 .mn-widget-member-text {
   display: none;
 }
+
+
 
 .branded {
   color: #c53241;
