@@ -114,6 +114,9 @@ footer ul .dot {
 .social-wrap ul li a {
   font-size: 34px;
 }
+.social-wrap ul li a span {
+  display: none;
+}
 .social-wrap ul li a:hover {
   text-decoration: none;
 }
