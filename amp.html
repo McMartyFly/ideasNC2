@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <title>Ideas Envy LLC [Business, Career, and Life Coaching]</title>
+    <link rel="icon" href="favicomatic/favicon-16x16.png">
+    <link rel="canonical" href="http://www.ideasenvy.com/index.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -17,9 +19,433 @@
         ]
       }
     </script>
+
+    <style amp-custom>
+      /* ########################################################### */
+      /* MAIN CONTENT WRAPPER */
+      .content {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      /* ########################################################### */
+      /* NAVIGATION SECTION */
+      .nav-wrap {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .nav-wrap .nav {
+        background: #343a40;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+        height: 45px;
+        margin: 0 auto;
+        padding: 15px 0 0;
+        position: relative;
+        max-width: 600px;
+      }
+      .nav-wrap .nav .nav-logo-wrap {
+        display: block;
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+      .nav-wrap .nav .nav-logo-wrap amp-img {
+        left: 14px;
+        position: relative;
+        top: 14px;
+      }
+      .nav-wrap .nav .fa.fa-ellipsis-h {
+        color: #c53241;
+        font-size: 2rem;
+        position: absolute;
+        right: 14px;
+        top: 16px;
+      }
+      .nav-wrap .nav h1 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: normal;
+        margin: -4px 0 0;
+        padding-top: 5px;
+        text-align: center;
+      }
+      .nav-wrap .nav h1 span {
+        color: #c53241;
+      }
+      /* ########################################################### */
+      /* HEADER CAPTION AND IMG */
+      .header-img-wrap {
+        position: relative;
+      }
+      .header-img-wrap h2 {
+        color: #fff;
+        font-weight: normal;
+        position: absolute;
+        text-align: center;
+        text-shadow: rgb(0, 0, 0) 1px 1px 0px;
+        top: 42%;
+        width: 100%;
+        z-index: 1;
+      }
+      /* ########################################################### */
+      /* ABOUT SECTION */
+      .about-wrap {
+        padding: 15px 15px 0;
+      }
+      .about-wrap h1 {
+        color: #000;
+        margin: 0;
+      }
+      .about-wrap h1 span {
+        color: #0069d9;
+      }
+      .about-wrap p span {
+        color: #0069d9;
+      }
+      /* ########################################################### */
+      /* CONTACT SECTION */
+      .contact-wrap {
+        background: #F7F7F7;
+        padding: 15px;
+        text-align: center;
+      }
+      .contact-wrap h1 {
+        color: #0069d9;
+        margin: 0;
+      }
+      .contact-wrap i {
+        margin-right: 5px;
+      }
+      .contact-wrap > a {
+        color: #0069d9;
+      }
+      .contact-wrap ul {
+        list-style: none;
+        margin: 26px 0 0;
+        padding: 0;
+      }
+      .contact-wrap ul amp-img {
+        border-radius: 6px;
+        position: relative;
+        top: 3px;
+      }
+      .contact-wrap ul li {
+        display: inline-block;
+        margin-right: 5px;
+      }
+      .contact-wrap ul li:last-child {
+        margin: 0;
+      }
+      .contact-wrap ul li a {
+        font-size: 34px;
+        text-decoration: none;
+      }
+      .contact-wrap ul .fa-facebook-square {
+        color: #3B5998;
+      }
+      .contact-wrap ul .fa-twitter-square {
+        color: #1DA1F2;
+      }
+      .contact-wrap ul .fa-google-plus-square {
+        color: #DB4437;
+      }
+      .contact-wrap ul .fa-youtube-square {
+        color: #ff0000;
+      }
+      .contact-wrap ul .fa-instagram {
+        color: #C32AA3;
+      }
+      .contact-wrap ul .fa-linkedin-square {
+        color: #007BB5;
+      }
+      /* ########################################################### */
+      /* MID AND BOTTOM BANNERS */
+      .mid-banner,
+      .bottom-banner {
+        background: #343a40;
+        padding: 10px 0;
+        text-align: center;
+      }
+      .mid-banner h3,
+      .bottom-banner h3 {
+        color: #fff;
+        font-weight: normal;
+        margin: 0;
+      }
+      .mid-banner span,
+      .bottom-banner span {
+        color: #c53241;
+      }
+      .bottom-banner {
+        height: 45px;
+        margin-top: 25px;
+      }
+      .bottom-banner h3 {
+        position: relative;
+        top: 12px;
+      }
+      /* ########################################################### */
+      /* SERVICES SECTION */
+      .services-wrap {
+        padding: 15px 15px 0;
+      }
+      .services-wrap ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .services-wrap ul li {
+        margin: 15px 0 24px;
+      }
+      .services-wrap ul li:first-child {
+        margin: 0 0 24px 0;
+      }
+      .services-wrap ul li:last-child {
+        margin: 15px 0;
+      }
+      .services-wrap ul li h1 {
+        color: #0069d9;
+        margin: 0 0 10px;
+        text-align: center;
+      }
+      .services-wrap ul li p {
+        margin: 0;
+        text-align: center;
+      }
+      .services-wrap ul li a {
+        background: #ccc;
+        border-radius: 15px;
+        color: #fff;
+        display: block;
+        margin: 15px auto 0;
+        padding: 25px 0;
+        text-align: center;
+        text-decoration: none;
+        width: 200px;
+      }
+      .services-wrap ul li.bottom-rule {
+        background: #F7F7F7;
+        border-radius: 2px;
+        height: 4px;
+        margin: 0 auto;
+        width: 85%;
+      }
+      .services-wrap ul li.coaching h1 span {
+        color: #2ecc71;
+      }
+      .services-wrap ul li.coaching a {
+        background: #2ecc71;
+      }
+      .services-wrap ul li.public-speaking h1 span {
+        color: #9b59b6;
+      }
+      .services-wrap ul li.public-speaking a {
+        background: #9b59b6;
+      }
+      .services-wrap ul li.web-design h1 span {
+        color: #e74c3c;
+      }
+      .services-wrap ul li.web-design a {
+        background: #e74c3c;
+      }
+      .services-wrap ul li.digital-marketing h1 span {
+        color: #f1c40f;
+      }
+      .services-wrap ul li.digital-marketing a {
+        background: #f1c40f;
+      }
+      /* ########################################################### */
+      /* SOCIAL COVERS CTA */
+      .social-cover-cta {
+        background: #F7F7F7;
+        padding: 20px 0;
+      }
+      .social-cover-cta h1 {
+        margin: 0;
+        text-align: center;
+      }
+      .social-cover-cta h1 span {
+        color: #c53241;
+      }
+      .social-cover-cta a {
+        background: #0069d9;
+        border-radius: 15px;
+        color: #fff;
+        display: block;
+        padding: 25px 0;
+        margin: 15px auto 0;
+        text-align: center;
+        text-decoration: none;
+        width: 200px;
+      }
+      /* ########################################################### */
+      /* CHAMBER OF COMMERCE IMG AND CAPTION*/
+      .HCC-tag {
+        color: #D54B3A;
+        display: block;
+        margin-top: 25px;
+        text-align: center;
+      }
+      .HCC-img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 70%;
+      }
+      /* ########################################################### */
+      /* FOOTER STYLES */
+      footer {
+        background: #343a40;
+        padding: 15px 0;
+        text-align: center;
+      }
+      footer amp-img {
+        margin-bottom: 13px;
+      }
+      footer a {
+        color: #0069d9;
+        display: block;
+        text-decoration: none;
+      }
+      footer p {
+        color: #fff;
+      }
+      footer p span {
+        color: #c53241;
+      }
+      footer .home-url {
+        color: #c53241;
+      }
+      /* ########################################################### */
+
+    </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
   </head>
   <body>
-    <h1>Welcome to the mobile web</h1>
+
+    <!-- OPEN CONTENT WRAP -->
+    <div class="content">
+
+      <!-- NAVIGATION -->
+      <div class="nav-wrap">
+        <div class="nav">
+          <a href="#" class="nav-logo-wrap"><amp-img src="favicomatic/favicon-32x32.png" width="32" height="32"> <noscript><img src="favicomatic/favicon-32x32.png" /></noscript> </amp-img></a>
+          <h1><span>Ideas Envy</span> LLC</h1>
+          <a class="fa fa-ellipsis-h"></a>
+        </div>
+      </div>
+
+      <!-- HEADER IMAGE -->
+      <div class="header-img-wrap">
+        <h2>Ideas Envy LLC<br>Business, Career & Life Coaching</h2>
+        <amp-img src="imgs/professional-meeting-amp-v1.jpg" layout="responsive" width="1450" height="1000" ></amp-img>
+      </div>
+
+      <div class="about-wrap">
+        <h1><span>Ideas Envy</span><br>Business, Career, and Life Coaching</h1>
+        <p>Take a Moment right now and think back through your social and professional life. How many times did you have to present to others a positive image of yourself or your business? If you think about it, you do it daily or even hourly in some situations.</p>
+        <p>How you present yourself matters.</p>
+        <p>If you improve that presentation, do you think you will make better business relationships? Do you think you will make more income? Is it possible to improve your relationships?</p>
+        <p>If you are one of the many people who could use a “nudge” in their life, you’re not alone. Thousands of people, every day, go through their routines knowing they need something better and deserve more out of life and business.</p>
+        <p><span>Now’s the time to make a start on that!</span></p>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="contact-wrap">
+        <h1>Contact Us</h1>
+        <p><i class="fa fa-home"></i>2111 Baycourt Trl<br>Hillsborough, NC 27278</p>
+        <p><i class="fa fa-phone"></i>(919) 883 5584</p>
+        <a href="mailto:sales@ideasenvy.com"><i class="fa fa-envelope"></i>sales@ideasenvy.com</a>
+
+        <!-- SOCIALS -->
+        <ul>
+          <li class="ziglar-icon">
+            <a href="https://www.ziglar.com/david-carter/" target="_blank">
+              <amp-img src="https://www.ziglar.com/wp-content/uploads/2015/11/cropped-favicon.png" height="30" width="30"></amp-img>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/davecarterusa" class="fa fa-facebook-square" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/davecarterusa" class="fa fa-twitter-square" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/b/101790435437062687213/" class="fa fa-google-plus-square" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCoIkau-SgarfcytQRY0EcCg" class="fa fa-youtube-square" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ideasenvy/" class="fa fa-instagram" target="_blank"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/david-pratt-carter/" class="fa fa-linkedin-square" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MID PAGE BANNER -->
+      <div class="mid-banner">
+        <h3>Tell Us How<br><span>We Can Help Transform Your Life</span></h3>
+      </div>
+
+      <!-- SERVICES OFFERED -->
+      <div class="services-wrap">
+        <ul>
+          <li class="coaching">
+            <h1>Career and Life <span>Coach</span>ing</h1>
+            <p>If there is just too much on your plate, a life coach can help you prioritize your range of options. Together, you'll determine what's in line with your values;  What you have to do, what you want to do, and how to start doing it.</p>
+            <a href="consulting/consulting_coaching/index.html" target="_blank">Click Here to Get Started</a>
+          </li>
+          <li class="bottom-rule"></li>
+          <li class="public-speaking">
+            <h1>Public <span>Speak</span>ing Services</h1>
+            <p>Ideas Envy Public Speaking Training emphasizes practical principles and processes by designing programs that offer people the knowledge, skills and practices they need to succeed.</p>
+            <a href="consulting/consulting_public-speaking/index.html" target="_blank">Click Here to Get Started</a>
+          </li>
+          <li class="bottom-rule"></li>
+          <li class="web-design">
+            <h1>Web <span>Design</span> / Web <span>Develop</span>ment</h1>
+            <p>From conception and strategy to design and implementation, we provide premium web design and web development services for individuals, businesses, and associations.</p>
+            <a href="consulting/consulting_web-design/index.html" target="_blank">Click Here to Get Started</a>
+          </li>
+          <li class="bottom-rule"></li>
+          <li class="digital-marketing">
+            <h1>Digital <span>Market</span>ing</h1>
+            <p>Let's face it, today's online market place is more competitive than ever. You need a digital marketing partner that not only understands the customer journey but how to develop an online marketing strategy that helps your brand become known as "the best answer" wherever prospects and customers may be looking: Search, social media, industry media or email.</p>
+            <a href="consulting/consulting_digital-marketing/index.html" target="_blank">Click Here to Get Started</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- BOTTOM PAGE BANNER -->
+      <div class="bottom-banner">
+        <h3>Don't <span>Forget</span>...</h3>
+      </div>
+
+      <!-- SOCIAL COVER CTA -->
+      <div class="social-cover-cta">
+        <h1><span>All of Our Customers<br></span> are eligible to receive<br><span>A Free Social Media Cover</span>!</h1>
+        <a href="find-out-more/free-social-covers.html" target="_blank">Show Me More!</a>
+      </div>
+
+      <i class="HCC-tag">Proudly Associated With</i>
+      <a class="HCC-img" href="http://www.hillsboroughchamber.com/" target="_blank"><amp-img src="imgs/Hillsborough-Orange-County-Chamber-of-Commerce-logo.jpg" layout="responsive" width="500" height="204"> <noscript><img src="imgs/Hillsborough-Orange-County-Chamber-of-Commerce-logo.jpg" /></noscript> </amp-img></a>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <amp-img src="favicomatic/favicon-32x32.png" width="32" height="32"> <noscript><img src="favicomatic/favicon-32x32.png" /></noscript> </amp-img>
+        <a href="privacypolicy.htm" target="_blank">Privacy Policy</a>
+        <p>All rights reserved &copy; <span>Ideas Envy</span> LLC</p>
+        <a class="home-url" href="http://www.ideasenvy.com">www.IdeasEnvy.com</a>
+      </footer>
+
+    </div>
+    <!-- CLOSE CONTENT WRAP -->
+
   </body>
 </html>
