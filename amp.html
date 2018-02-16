@@ -7,6 +7,15 @@
     <link rel="icon" href="favicomatic/favicon-16x16.png">
     <link rel="canonical" href="http://www.ideasenvy.com/index.html">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- imported scripts for sidebar support -->
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <!-- ========== -->
+
+    <!-- imported scripts for google tag manager -->
+    <script async custom-element="amp-analytics"src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -100,9 +109,6 @@
         margin: 0;
       }
       .about-wrap h1 span {
-        color: #0069d9;
-      }
-      .about-wrap p span {
         color: #0069d9;
       }
       /* ########################################################### */
@@ -261,7 +267,7 @@
       /* SOCIAL COVERS CTA */
       .social-cover-cta {
         background: #F7F7F7;
-        padding: 20px 0;
+        padding: 20px 10px;
       }
       .social-cover-cta h1 {
         margin: 0;
@@ -319,6 +325,39 @@
         color: #c53241;
       }
       /* ########################################################### */
+      /* TEST NAV STYLES */
+      amp-sidebar {
+        background: #2A2E32;
+        border-radius: 0 15px 15px 0;
+        box-shadow: 3px 0px 5px rgba(0,0,0,0.5);
+        height: auto;
+        margin-top: 85px;
+      }
+      amp-sidebar ul {
+        list-style: none;
+        padding: 20px 20px 20px 0;
+        margin: 0;
+      }
+      amp-sidebar ul li {
+        background: #c53241;
+        border-radius: 0 10px 10px 0;
+        margin: 0 0 10px 0;
+      }
+      amp-sidebar ul li:last-child {
+        margin: 0;
+      }
+      amp-sidebar ul li a {
+        color: #fff;
+        display: block;
+        font-family: sans-serif;
+        padding: 15px;
+        text-decoration: none;
+      }
+
+      #idContact {
+        position: relative;
+        top: -55px;
+      }
 
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -334,7 +373,7 @@
         <div class="nav">
           <a href="#" class="nav-logo-wrap"><amp-img src="favicomatic/favicon-32x32.png" width="32" height="32"> <noscript><img src="favicomatic/favicon-32x32.png" /></noscript> </amp-img></a>
           <h1><span>Ideas Envy</span> LLC</h1>
-          <a class="fa fa-ellipsis-h"></a>
+          <a on="tap:sidebar.toggle" class="fa fa-ellipsis-h"></a>
         </div>
       </div>
 
@@ -345,15 +384,20 @@
       </div>
 
       <div class="about-wrap">
-        <h1><span>Ideas Envy</span><br>Business, Career, and Life Coaching</h1>
+        <h1><span>Ideas Envy's</span><br>Business, Career, and Life Coaching</h1>
         <p>Take a Moment right now and think back through your social and professional life. How many times did you have to present to others a positive image of yourself or your business? If you think about it, you do it daily or even hourly in some situations.</p>
         <p>How you present yourself matters.</p>
         <p>If you improve that presentation, do you think you will make better business relationships? Do you think you will make more income? Is it possible to improve your relationships?</p>
         <p>If you are one of the many people who could use a “nudge” in their life, you’re not alone. Thousands of people, every day, go through their routines knowing they need something better and deserve more out of life and business.</p>
-        <p><span>Now’s the time to make a start on that!</span></p>
+        <p>Now’s the time to make a start on that!</p>
+        <h1><span>Ideas Envy's</span><br>Website Design, Support, and Marketing</h1>
+        <p>Your website speaks for you when you're not around. Have you taken a look at your website lately and "listened" to what it's saying? Have you searched for your own website based upon what you offer and found your own website? When you look at your website, does it make you feel good because it looks great, conveys your product or service properly, and lets people know about you?</p>
+        <p>Just like with our other services, we know people pay attention when you present the right image. This is why Ideas Envy has the reputation of working closely with clients to help them build the image they need on the web. We handle Search Engine Optimization (SEO), Website Design and Building, Citations and Reputation assistance as well as Accelerated Mobile pages.</p>
+        <p>We know you could easily use a simple, no frills product to create a website. This is why we don't offer simple, no frills web solutions. Ideas Envy LLC builds solutions that work. When you want to be found on the web with the best look and behavior, that's what we do. We help you get found on the web. And, we make you look your best!</p>
       </div>
 
       <!-- CONTACT -->
+      <div id="idContact"></div>
       <div class="contact-wrap">
         <h1>Contact Us</h1>
         <p><i class="fa fa-home"></i>2111 Baycourt Trl<br>Hillsborough, NC 27278</p>
@@ -446,6 +490,38 @@
 
     </div>
     <!-- CLOSE CONTENT WRAP -->
+    <amp-sidebar id="sidebar"
+      layout="nodisplay"
+      side="left">
+      <ul>
+        <li>
+          <a href="programs-offered/index.html">Programs Offered</a>
+        </li>
+        <li>
+          <a href="http://www.ideasenvy.com/ideas_galore">Ideas Galore Blog</a>
+        </li>
+        <li>
+          <a href="#idContact" on="tap:idContact.scrollTo">Contact Ideas Envy</a>
+        </li>
+      </ul>
+    </amp-sidebar>
+    <amp-pixel src="https://www.facebook.com/tr?id=1073687922675763&ev=PageView&noscript=1" layout="nodisplay"></amp-pixel>
 
+    <!-- google tag manager -->
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-41553005-1"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
   </body>
 </html>
