@@ -7,6 +7,10 @@
 body {
   padding-top: 54px;
 }
+iframe {
+  display: block;
+  margin: 20px auto;
+}
 
 /*header styles */
 .business-header {
