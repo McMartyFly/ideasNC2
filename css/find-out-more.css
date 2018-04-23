@@ -26,6 +26,36 @@ body {
   padding-left: 5px;
   width: 300px;
 }
+.content-wrap.traffic .chess {
+  border-radius: 1rem;
+  display: block;
+  float: none;
+  margin: 0 auto 20px;
+  width: 600px;
+}
+.content-wrap.traffic .copy-wrap {
+  margin: 40px auto 0;
+}
+.content-wrap.traffic p.top,
+.content-wrap.traffic p.mid,
+.content-wrap.traffic p.bottom {
+  max-width: 75%;
+  margin: 20px auto;
+}
+.content-wrap.traffic p.top span.one {
+  color: #c53241;
+  font-weight: bold;
+}
+.content-wrap.traffic p.mid span.one {
+  color: #0069d9;
+  font-weight: bold;
+}
+.content-wrap.traffic p.bottom {
+  text-align: center;
+}
+.content-wrap.traffic .banner728-90 {
+  margin: 0 auto;
+}
 .content-wrap img.free-book {
   border-radius: 50%;
   padding-left: 20px;
